@@ -55,3 +55,4 @@ function formSubmitted() {
     analytics.track('Form Submitted',{
         email: document.getElementById('userEmail').value 
     });
+};
