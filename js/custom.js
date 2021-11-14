@@ -34,7 +34,7 @@ function pricingOptionMoon() {
     analytics.track('Button Clicked', {
         label: 'purchase',
         pricing_option: 'Moon',
-        price:0
+        price: 0
     });
 };
 
@@ -42,7 +42,7 @@ function pricingOptionPlanet() {
     analytics.track('Button Clicked', {
         label: 'purchase',
         pricing_option: 'Planet',
-        price:6
+        price: 6
     });
 };
 
@@ -50,6 +50,6 @@ function pricingOptionGalaxy() {
     analytics.track('Button Clicked', {
         label: 'purchase',
         pricing_option: 'Galaxy',
-        price:24
+        price: 24
     });
 };
