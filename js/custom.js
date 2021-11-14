@@ -22,8 +22,32 @@
 
 function buttonClicked() {
     analytics.track('Button Clicked', {label: 'get_app'});
-}
+};
 
 // Form Submitted Event
 
 // Purchase Event
+
+function pricingOptionMoon () {
+    analytics.track('Button Clicked', {
+        label: 'purchase',
+        pricing_option: 'Moon',
+        price:0
+    });
+};
+
+function pricingOptionPlanet () {
+    analytics.track('Button Clicked', {
+        label: 'purchase',
+        pricing_option: 'Planet',
+        price:6
+    });
+};
+
+unction pricingOptionGalaxy () {
+    analytics.track('Button Clicked', {
+        label: 'purchase',
+        pricing_option: 'Galaxy',
+        price:24
+    });
+};
