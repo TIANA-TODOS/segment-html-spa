@@ -15,3 +15,7 @@
   analytics.load("4Aln8gFzldcr7GyAO4xMzZgbsnwuCGjC");
   analytics.page();
   }}();
+
+function buttonClicked() {
+    analytics.track('Button Clicked', {label: 'get_app'});
+}
