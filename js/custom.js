@@ -52,7 +52,8 @@ function pricingOptionGalaxy() {
 // Form Submitted Event
 
 function formSubmitted() {
-    analytics.track('Form Submitted',{
-        email: document.getElementById('userEmail').value 
+    var email=document.getElementById('userEmail').value;
+    analytics.track('Form Submitted', {
+        email: email
     });
 };
