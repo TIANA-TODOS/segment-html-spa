@@ -17,23 +17,28 @@
   analytics.page();
   }}();
 
+
 // Button Clicked Event
-function buttonClicked() {
-    analytics.track('Button Clicked', {label: 'get_app'});
+function getApp() {
+    analytics.track('Get App', {
+        label: 'get_app'
+    });
 };
 
 
+/*
 // Purchase Event
-function pricingOptionMoon() {
-    analytics.track('Button Clicked', {
+function pricingOption() {
+    analytics.track('Subscription', {
         label: 'purchase',
         pricing_option: 'Moon',
         price: 0
     });
 };
+*/
 
 function pricingOptionPlanet() {
-    analytics.track('Button Clicked', {
+    analytics.track('Subscription', {
         label: 'purchase',
         pricing_option: 'Planet',
         price: 6
@@ -41,7 +46,7 @@ function pricingOptionPlanet() {
 };
 
 function pricingOptionGalaxy() {
-    analytics.track('Button Clicked', {
+    analytics.track('Subscription', {
         label: 'purchase',
         pricing_option: 'Galaxy',
         price: 24
