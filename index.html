@@ -281,7 +281,7 @@
         
         <div class="fix-12-12">
           <ul class="flex verticalCenter">
-            <li class="col-5-12 cell-27">
+            <li class="col-5-12 cell-27" onclick="appleWatchSlide()">
               <div class="fix-4-12">
                 <ul class="slider clickable ae-1 fromAbove" data-slider-id="27-2">
                   <li class="selected"><img src="assets/img/watch-26-2.png" alt="Apple Watch Thumbnail"/></li>
@@ -297,6 +297,13 @@
                 </ul>
               </div>
             </li>
+            <script>
+              function appleWatchSlide() {
+                analytics.track('Apple Watch Clicked', {
+                    label: apple_watch
+                });
+            }
+            </script>
             <li class="col-7-12 left">
               <h1 class="ae-2 fromRight">Be creative</h1>
               <div class="ae-3 fromRight">
