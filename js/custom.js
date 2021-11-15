@@ -1,5 +1,5 @@
 // Segment Javascript Snippet for tracking events
-! function() {
+!function() {
     var analytics = window.analytics = window.analytics || [];
     if(!analytics.initialize)
         if(analytics.invoked) window.console && console.error && console.error("Segment snippet included twice.");
