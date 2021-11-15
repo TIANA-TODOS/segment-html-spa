@@ -519,9 +519,9 @@
           <h1 class="huge ae-1 margin-bottom-2">Download Mobile App</h1>
           <p class="hero ae-2 margin-bottom-3"><span class="opacity-8">Learning never exhausts the mind.</span></p>
 
-          <form action="#" autocomplete="off" class="slides-form margin-bottom-3" onsubmit="formSubmitted()">
+          <form action="#" autocomplete="off" class="slides-form margin-bottom-3">
             <input type="email" class="ae-3" name="email" placeholder="E-mail address"/>
-            <button type="submit" class="button blue gradient ae-4" name="submit">Try it free</button>
+            <button type="submit" class="button blue gradient ae-4" name="submit" onsubmit="formSubmitted()">Try it free</button>
           </form>
           <script>
             function formSubmitted() {
@@ -529,9 +529,8 @@
               analytics.track('Form Submitted', {
                   email: email
               });
-          }
+            }
           </script>
-
           <a href="#" class="button hollow ae-5"><img src="assets/img/appstore.jpg" height="63"/></a><a href="#" class="button hollow ae-6"><img src="assets/img/googleplay.jpg" height="63"/></a>
         </div>
                 
