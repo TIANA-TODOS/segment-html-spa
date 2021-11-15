@@ -455,7 +455,16 @@
                   <li class="opacity-8">24/7 Customer Support</li>
                 </ul>
               </div>
-              <a href="#" class="button green gradient wide cropSides cropBottom ae-8" onclick="pricingOptionPlanet()">Purchase</a>
+              <a href="#" class="button green gradient wide cropSides cropBottom ae-8" onclick="pricingOption()">Purchase</a>
+              <script>
+                function pricingOption() {
+                  analytics.track('Subscription', {
+                    label: 'purchase',
+                    pricing_option: 'Planet',
+                    price: 6
+                  });
+                }
+              </script>>
             </li>
             <li class="col-4-12 ae-5">
               <h3>Galaxy</h3>
@@ -473,7 +482,16 @@
                   <li class="opacity-8">24/7 Customer Support</li>
                 </ul>
               </div>
-              <a href="#" class="button green gradient wide cropSides cropBottom ae-9" onclick="pricingOptionGalaxy()">Purchase</a>
+              <a href="#" class="button green gradient wide cropSides cropBottom ae-9" onclick="pricingOption()">Purchase</a>
+              <script>
+                function pricingOption() {
+                  analytics.track('Subscription', {
+                    label: 'purchase',
+                    pricing_option: 'Galaxy',
+                    price: 24
+                  });
+                }
+              </script>>
             </li>
           </ul>
         </div> 
