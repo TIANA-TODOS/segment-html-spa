@@ -38,12 +38,16 @@ function pricingOptionGalaxy() {
         price: 24
     });
 };
-*/
+
 
 // Form Submitted Event
 function formSubmitted() {
-    var email=document.getElementById('userEmail').value;
+    var email=form["email"].value;
     analytics.track('Form Submitted', {
         email: email
     });
 };
+
+*/
+
+
