@@ -115,7 +115,7 @@
         <li><a href="#">Explore</a></li>
       </ul>
     </div>
-    <div class="right"><a class="button blue gradient" href="#">Profile</a><a class="button green gradient" href="#" onclick="buttonClicked()">Get App</a></div>
+    <div class="right"><a class="button blue gradient" href="#">Profile</a><a class="button green gradient" href="#" onclick="getApp()">Get App</a></div>
   </div>
   <div class="sections compact hidden">
     <div class="left"><a href="#" title="Slides Framework"><svg style="width:82px;height:24px"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#logo"></use></svg></a></div>
@@ -429,7 +429,16 @@
                   <li class="opacity-7">24/7 Customer Support</li>
                 </ul>
               </div>
-              <a href="#" class="button blue gradient wide cropSides cropBottom ae-7" onclick="pricingOptionMoon()">Try Free</a>
+              <a href="#" class="button blue gradient wide cropSides cropBottom ae-7" onclick="pricingOption()">Try Free</a>
+              <script>
+                function pricingOption() {
+                  analytics.track('Subscription', {
+                    label: 'purchase',
+                    pricing_option: 'Moon',
+                    price: 0
+                  });
+                }
+              </script>>
             </li>
             <li class="col-4-12 ae-4">
               <h3>Planet</h3>
@@ -446,7 +455,7 @@
                   <li class="opacity-8">24/7 Customer Support</li>
                 </ul>
               </div>
-              <a href="#" class="button green gradient wide cropSides cropBottom ae-8"  onclick="pricingOptionPlanet()">Purchase</a>
+              <a href="#" class="button green gradient wide cropSides cropBottom ae-8" onclick="pricingOptionPlanet()">Purchase</a>
             </li>
             <li class="col-4-12 ae-5">
               <h3>Galaxy</h3>
