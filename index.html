@@ -437,15 +437,6 @@
                 </ul>
               </div>
               <a href="#" class="button blue gradient wide cropSides cropBottom ae-7" onclick="pricingOptionMoon()">Try Free</a>
-              <script>
-                function pricingOptionMoon() {
-                  analytics.track('Subscription', {
-                    label: 'purchase',
-                    pricing_option: 'Moon',
-                    price: 0
-                  });
-                }
-              </script>>
             </li>
             <li class="col-4-12 ae-4">
               <h3>Planet</h3>
@@ -463,15 +454,6 @@
                 </ul>
               </div>
               <a href="#" class="button green gradient wide cropSides cropBottom ae-8" onclick="pricingOptionPlanet()">Purchase</a>
-              <script>
-                function pricingOptionPlanet() {
-                  analytics.track('Subscription', {
-                    label: 'purchase',
-                    pricing_option: 'Planet',
-                    price: 6
-                  });
-                }
-              </script>>
             </li>
             <li class="col-4-12 ae-5">
               <h3>Galaxy</h3>
@@ -490,15 +472,6 @@
                 </ul>
               </div>
               <a href="#" class="button green gradient wide cropSides cropBottom ae-9" onclick="pricingOptionGalaxy()">Purchase</a>
-              <script>
-                function pricingOptionGalaxy() {
-                  analytics.track('Subscription', {
-                    label: 'purchase',
-                    pricing_option: 'Galaxy',
-                    price: 24
-                  });
-                }
-              </script>>
             </li>
           </ul>
         </div> 
@@ -523,14 +496,6 @@
             <input type="email" class="ae-3" name="email" placeholder="E-mail address" id="userEmail"/>
             <button type="submit" class="button blue gradient ae-4" name="submit" onclick="formSubmitted()">Try it free</button>
           </form>
-          <script>
-            function formSubmitted() {
-              var email=document.getElementById('userEmail').value;
-              analytics.track('Form Submitted', {
-                  email: email
-              });
-            }
-          </script>
           <a href="#" class="button hollow ae-5"><img src="assets/img/appstore.jpg" height="63"/></a><a href="#" class="button hollow ae-6"><img src="assets/img/googleplay.jpg" height="63"/></a>
         </div>
                 
