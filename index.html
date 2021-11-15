@@ -520,12 +520,12 @@
           <p class="hero ae-2 margin-bottom-3"><span class="opacity-8">Learning never exhausts the mind.</span></p>
 
           <form action="#" autocomplete="off" class="slides-form margin-bottom-3">
-            <input type="email" class="ae-3" name="email" placeholder="E-mail address"/>
-            <button type="submit" class="button blue gradient ae-4" name="submit" onsubmit="formSubmitted()">Try it free</button>
+            <input type="email" class="ae-3" name="email" placeholder="E-mail address" id="userEmail"/>
+            <button type="submit" class="button blue gradient ae-4" name="submit" onclick="formSubmitted()">Try it free</button>
           </form>
           <script>
             function formSubmitted() {
-              var email=form["email"].value;
+              var email=document.getElementById('userEmail').value;
               analytics.track('Form Submitted', {
                   email: email
               });
