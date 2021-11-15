@@ -13,7 +13,6 @@ function getApp() {
 };
 
 
-/*
 // Purchase Event
 function pricingOption() {
     analytics.track('Subscription', {
@@ -39,15 +38,10 @@ function pricingOptionGalaxy() {
     });
 };
 
-
 // Form Submitted Event
 function formSubmitted() {
-    var email=form["email"].value;
+    var email=document.getElementById('userEmail').value;
     analytics.track('Form Submitted', {
         email: email
     });
-};
-
-*/
-
-
+}
