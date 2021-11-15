@@ -24,27 +24,6 @@ function buttonClicked() {
 
 
 // Purchase Event
-
-
-$( document ).ready(function() {
-
-    var link = $("#subscriptionMoon a")
-
-    analytics.trackLink(link, 'Purchase', {
-        label: 'purchase',
-        pricing_option: 'Moon',
-        price: 0
-    });
-
-    console.log( "ready!" );
-});
-
-
-
-
-
-/*
-
 function pricingOptionMoon() {
     analytics.track('Button Clicked', {
         label: 'purchase',
@@ -68,7 +47,7 @@ function pricingOptionGalaxy() {
         price: 24
     });
 };
-*/
+
 
 // Form Submitted Event
 function formSubmitted() {
